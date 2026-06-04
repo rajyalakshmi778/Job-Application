@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Application Portal</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <div class="container">
+        <header class="job-header">
+            <h1>Software Developer</h1>
+            <h3>Demo Technologies Pvt Ltd</h3>
+            <div class="job-meta">
+                <p><strong>Location:</strong> Hyderabad</p>
+                <p><strong>Experience:</strong> 0-2 Years</p>
+                <p><strong>Skills:</strong> Java, SQL, HTML, CSS</p>
+            </div>
+            <hr>
+            <h4>Job Description</h4>
+            <p>We are looking for a motivated junior developer to join our engineering team. You will be building modern web modules, optimizing queries, and working hand-in-hand with our cloud deployment teams.</p>
+        </header>
+
+        <section class="form-section">
+            <h2>Apply Now</h2>
+            <form id="jobApplicationForm">
+                <label for="fullName">Full Name *</label>
+                <input type="text" id="fullName" required>
+
+                <label for="email">Email Address *</label>
+                <input type="email" id="email" required>
+
+                <label for="phoneNumber">Phone Number *</label>
+                <input type="tel" id="phoneNumber" required>
+
+                <label for="qualification">Highest Qualification</label>
+                <input type="text" id="qualification">
+
+                <label for="experience">Years of Experience</label>
+                <input type="number" id="experience" min="0" value="0">
+
+                <label for="skills">Your Skills (Comma separated)</label>
+                <input type="text" id="skills" placeholder="e.g. Java, Python, JavaScript">
+
+                <label for="coverLetter">Cover Letter</label>
+                <textarea id="coverLetter" rows="4"></textarea>
+
+                <button type="submit" id="submitBtn">Apply Now</button>
+            </form>
+            <div id="responseMessage" class="hidden"></div>
+        </section>
+    </div>
+    <script src="app1.js"></script>
+</body>
+</html>
